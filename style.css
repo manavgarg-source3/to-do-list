@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Resetting Default Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Main Container */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color-main, rgb(0, 255, 255));
+  width: 100%;
+  height: 100vh;
+}
+
+/* Box Styles */
+.box {
+  background-color: var(--bg-color-box, aliceblue);
+  width: 650px;
+  min-height: 500px;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+/* Input Styles */
+#item {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  display: block;
+  box-shadow: 0px 0px 2px gray;
+}
+
+/* To-Do List Styles */
+#to-do-box {
+  margin-top: 15px;
+  list-style: none;
+}
+
+#to-do-box li {
+  position: relative;
+  background-color: var(--bg-color-item, rgb(95, 158, 160));
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  padding-right: 30px;
+  text-align: justify;
+  margin-top: 10px;
+  user-select: none;
+}
+
+#to-do-box li i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* Completed Item Styles */
+.done {
+  text-decoration: line-through;
+  color: black;
+  background-color: var(--bg-color-done, #95a5a6) !important;
+}
+
+/* Header Styles */
+.box h1 {
+  margin-left: 50px;
+  padding-bottom: 10px;
+}
