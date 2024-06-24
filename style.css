@@ -27,51 +27,48 @@ main {
   border-radius: 6px;
   padding: 15px;
 }
+@media (max-width: 768px) {
+  .box {
+    width: 95%;
+    padding: 10px;
+  }
 
-/* Input Styles */
-#item {
-  width: 100%;
-  font-size: 20px;
-  padding: 10px;
-  border: 0;
-  outline: 0;
-  display: block;
-  box-shadow: 0px 0px 2px gray;
+  #item {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  #to-do-box li {
+    padding: 8px;
+    padding-right: 25px;
+  }
+
+  .box h1 {
+    margin-left: 30px;
+    font-size: 24px;
+  }
 }
 
-/* To-Do List Styles */
-#to-do-box {
-  margin-top: 15px;
-  list-style: none;
+/* Extra small screens */
+@media (max-width: 480px) {
+  .box {
+    width: 100%;
+    padding: 8px;
+  }
+
+  #item {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  #to-do-box li {
+    padding: 6px;
+    padding-right: 20px;
+  }
+
+  .box h1 {
+    margin-left: 20px;
+    font-size: 20px;
+  }
 }
 
-#to-do-box li {
-  position: relative;
-  background-color: var(--bg-color-item, rgb(95, 158, 160));
-  color: white;
-  padding: 10px;
-  border-radius: 3px;
-  padding-right: 30px;
-  text-align: justify;
-  margin-top: 10px;
-  user-select: none;
-}
-
-#to-do-box li i {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
-/* Completed Item Styles */
-.done {
-  text-decoration: line-through;
-  color: black;
-  background-color: var(--bg-color-done, #95a5a6) !important;
-}
-
-/* Header Styles */
-.box h1 {
-  margin-left: 50px;
-  padding-bottom: 10px;
-}
